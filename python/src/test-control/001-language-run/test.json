@@ -2,12 +2,18 @@
   "manifestVersion": 1,
   "protocolVersion": "2.0.0",
   "requestId": "python-template-language-run",
-  "extensionId": "com.m8test.extension.language.python",
-  "languageEntryId": "python",
   "fileName": "main.py",
   "scriptFile": "main.py",
   "timeoutMillis": 30000,
   "properties": {},
   "components": [],
-  "expectedLogs": ["test-control-language:python:passed"]
+  "expectedLogs": [
+    "test-control-language:python:passed"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "python",
+    "version": "0.1.12",
+    "languageEntryId": "python"
+  }
 }
