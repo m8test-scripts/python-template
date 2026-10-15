@@ -1,0 +1,19 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "python-template-jvm-interop",
+  "fileName": "main.py",
+  "scriptFile": "main.py",
+  "timeoutMillis": 30000,
+  "properties": {},
+  "components": [],
+  "expectedLogs": [
+    "python-template-jvm-interop:passed"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "python",
+    "version": "0.1.12",
+    "languageEntryId": "python"
+  }
+}
