@@ -21,3 +21,6 @@ tsconfig.json
 .emmyrc.json
 /**/node_modules/
 typescript/**
+
+# JVM heap dumps
+*.hprof
