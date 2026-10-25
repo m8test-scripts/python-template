@@ -1,0 +1,23 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "python-template-thread-timer-error",
+  "fileName": "main.py",
+  "scriptFile": "main.py",
+  "timeoutMillis": 30000,
+  "properties": {
+    "m8test.testControl.adbPort": "5555"
+  },
+  "components": [],
+  "expectedLogs": [
+    "thread-context:python:timer-error"
+  ],
+  "expectedOutcome": "scriptError",
+  "expectedErrorContains": "expected timer callback failure",
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "python",
+    "version": "0.1.12",
+    "languageEntryId": "python"
+  }
+}

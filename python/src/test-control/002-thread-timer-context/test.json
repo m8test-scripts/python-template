@@ -1,0 +1,27 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "python-template-thread-timer-context",
+  "fileName": "main.py",
+  "scriptFile": "main.py",
+  "timeoutMillis": 30000,
+  "properties": {
+    "m8test.testControl.adbPort": "5555"
+  },
+  "components": [],
+  "expectedLogs": [
+    "thread-context:python:immediate",
+    "thread-context:python:timeout",
+    "thread-context:python:interval",
+    "thread-context:python:thread",
+    "thread-context:python:thread-start",
+    "thread-context:python:thread-exit",
+    "thread-context:python:verified"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "python",
+    "version": "0.1.12",
+    "languageEntryId": "python"
+  }
+}

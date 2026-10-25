@@ -1,0 +1,33 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "python-template-coroutine-thread-context",
+  "fileName": "main.py",
+  "scriptFile": "main.py",
+  "timeoutMillis": 30000,
+  "properties": {
+    "m8test.testControl.adbPort": "5555"
+  },
+  "components": [],
+  "expectedLogs": [
+    "coroutine:python:script-main-verified",
+    "coroutine:python:io-captured-value-verified",
+    "coroutine:python:other-task-progressed",
+    "coroutine:python:delayed-captured-value-verified",
+    "coroutine:python:launch",
+    "coroutine:python:async",
+    "coroutine:python:async-success",
+    "coroutine:python:with-context",
+    "coroutine:python:flow:1",
+    "coroutine:python:flow:2",
+    "coroutine:python:flow-complete",
+    "coroutine:python:cancelled-work-complete",
+    "coroutine:python:gate"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "python",
+    "version": "0.1.12",
+    "languageEntryId": "python"
+  }
+}

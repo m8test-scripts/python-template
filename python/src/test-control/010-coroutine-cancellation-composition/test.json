@@ -1,0 +1,32 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "python-template-coroutine-cancellation-composition",
+  "fileName": "main.py",
+  "scriptFile": "main.py",
+  "timeoutMillis": 10000,
+  "properties": {
+    "m8test.testControl.adbPort": "5555"
+  },
+  "components": [],
+  "expectedLogs": [
+    "coroutine:python:timeout-cancellation-preserved",
+    "coroutine:python:timeout-or-null-ok",
+    "coroutine:python:timeout-or-null-complete",
+    "coroutine:python:loop-timeout-cancelled-wait",
+    "coroutine:python:loop-iteration:1",
+    "coroutine:python:loop-iteration:2",
+    "coroutine:python:loop-iteration:3",
+    "coroutine:python:loop-completed-count:3",
+    "coroutine:python:composed-wait-ok",
+    "coroutine:python:composed-wait-complete",
+    "coroutine:python:cancellation-gate",
+    "coroutine:python:ui-thread-callback"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "python",
+    "version": "0.1.12",
+    "languageEntryId": "python"
+  }
+}

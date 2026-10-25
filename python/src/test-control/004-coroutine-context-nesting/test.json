@@ -1,0 +1,13 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "python-template-coroutine-context-nesting",
+  "fileName": "main.py",
+  "scriptFile": "main.py",
+  "timeoutMillis": 30000,
+  "properties": { "m8test.testControl.adbPort": "5555" },
+  "components": [],
+  "expectedLogs": ["nest:python:outer-started", "nest:python:outer-resumed", "nest:python:inner-callback", "nest:python:other-task-progressed", "nest:python:delay-resumed", "nest:python:gate"],
+  "expectedOutcome": "succeeded",
+  "language": { "groupId": "com.m8test.language", "artifactId": "python", "version": "0.1.12", "languageEntryId": "python" }
+}
