@@ -2,6 +2,7 @@
 from m8test_java.com.m8test.script.GlobalVariables import _activity
 from m8test_java.com.m8test.script.GlobalVariables import _composeView
 from m8test_java.com.m8test.script.GlobalVariables import _logger
+from m8test_java.com.m8test.script.GlobalVariables import _stringResources
 
 # from 引入时必须使用相对于src目录的路径
 from python.com.example.tool.ToolB import ToolB
@@ -34,7 +35,7 @@ _composeView.create(
                         lambda text: (
                             # 2. 在组合过程中读取状态值，Compose 会自动追踪并触发重组
                             # 3. 使用 state.getValue() 获取状态值
-                            text.setText("点击次数" + str(state.getValue())),
+                            text.setText(_stringResources.getString("demo.counter.label") + str(state.getValue())),
                         )
                     ),
                     # 创建一个按钮，点击按钮时修改状态值
@@ -43,7 +44,7 @@ _composeView.create(
                             # 设置按钮内容显示一个简单的文本
                             textButton.setContent(
                                 lambda buttonSlot: buttonSlot.Text(
-                                    lambda text: text.setText("点击")
+                                    lambda text: text.setText(_stringResources.getString("demo.counter.button"))
                                 )
                             ),
                             textButton.setOnClick(
@@ -51,6 +52,10 @@ _composeView.create(
                                 lambda: state.setValue(state.getValue() + 1)
                             ),
                         )
+                    ),
+                    # 在按钮下方显示当前脚本语言
+                    columnSlot.Text(
+                        lambda text: text.setText(_stringResources.getString("demo.language"))
                     ),
                 )
             ),

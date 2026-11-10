@@ -72,6 +72,23 @@
 
 ---
 
+## 🌐 脚本项目 i18n
+
+模板在 `python/res/strings/` 提供 `en.json` 和 `zh.json`，文件名使用 BCP 47 语言标签。脚本跟随 Development Kit 当前语言，不需要在脚本中选择 locale。
+
+Python 脚本从全局变量模块导入 `_stringResources`：
+
+```python
+from m8test_java.com.m8test.script.GlobalVariables import _stringResources
+text.setText(_stringResources.getString("demo.counter.label") + str(state.getValue()))
+```
+
+示例把计数标签、按钮文本和按钮下方的语言标识都放在 catalog 中。`demo.language` 是完整文案，例如 `Script language: Python` 和 `脚本语言：Python`；语言名称 `Python` 保持不变。
+
+`m8test.project.description` 可分别翻译项目描述。中文 catalog 使用 `m8test.project.name` 提供中文项目名称；英文 catalog 不覆盖该键，因此保留 `appName` 配置的默认英文名称。
+
+---
+
 ## 🛠️ 项目开发流程
 
 1. **生成代码提示文件**  
