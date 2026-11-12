@@ -47,7 +47,7 @@ _composeView.create(
                                     lambda text: text.setText(_stringResources.getString("demo.counter.button"))
                                 )
                             ),
-                            textButton.setOnClick(
+                            textButton.onClick(
                                 # 4. 使用 state.setValue(newValue) 修改状态值
                                 lambda: state.setValue(state.getValue() + 1)
                             ),
